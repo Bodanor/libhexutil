@@ -10,7 +10,7 @@ OBJS        := $(SRCS:$(SRC_DIR)/%.c=$(BUILD_DIR)/%.o)
 DEPS        := $(OBJS:.o=.d)
 
 CC          := gcc
-CFLAGS      := -Wall -Wextra -Werror -DDEBUG -g -MMD -MP
+CFLAGS      := -Wall -Wextra -Werror -DLIBHEXUTILDEBUG -g -MMD -MP
 CPPFLAGS    := $(addprefix -I,$(INCS))
 
 AR          := ar
